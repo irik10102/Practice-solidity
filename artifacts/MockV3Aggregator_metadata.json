@@ -81,7 +81,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/MockV3Aggregator.sol": "MockV3Aggregator"
+			"contracts/Revise/MockV3Aggregator.sol": "MockV3Aggregator"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -95,12 +95,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"contracts/MockV3Aggregator.sol": {
-			"keccak256": "0xe4ddacebbdd62a7acd56fd9f8ecffa1d61bfc7abcfb1ef5e44f9ce167f693dc2",
+		"contracts/Revise/MockV3Aggregator.sol": {
+			"keccak256": "0x8eb2e0a32b6582f2d5a12957ecf337094eb33f5f7900e9cc60177df46cea1fc0",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7d8877659de8709a20b8d46a2646ac9b44cf8f12c55d222b39708a7ca857d0e8",
-				"dweb:/ipfs/QmcMk6buxsrcpSaNy7qg8nFNCqRdc9hm3BuyDyM79VcDzU"
+				"bzz-raw://96e179d21f8aa067e5412d5fdb674412eb1383599545162a976da5daf860a977",
+				"dweb:/ipfs/QmcsTYE35kvJr3gp2pu6246fomDv1diWaPNNuEpWqswE92"
 			]
 		}
 	},

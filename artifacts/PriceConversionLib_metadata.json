@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/PriceConversionLib.sol": "PriceConversionLib"
+			"contracts/Revise/PriceConversionLib.sol": "PriceConversionLib"
 		},
 		"evmVersion": "osaka",
 		"libraries": {},
@@ -40,12 +40,12 @@
 				"dweb:/ipfs/QmaG6vz6W6iEUBsbHSBob5mdcitYxWjoygxREHpsJHfWrS"
 			]
 		},
-		"contracts/PriceConversionLib.sol": {
-			"keccak256": "0xfd55acd8938f364ce35309aaee0c3a24f85fb17fa6f48850beef1c56a0876fec",
+		"contracts/Revise/PriceConversionLib.sol": {
+			"keccak256": "0x97639d761d9a3a186bd858b487746fc09864fd9bd6c42583bec273fcc8d583d1",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://000947c7d745277419254c607d790083b0b52f803a0cfc4e74ae0281e9124148",
-				"dweb:/ipfs/QmV8Eg2TA3WgHkuKxvXmZoBJQXgYQ2NKrHnEpeA95Fxbww"
+				"bzz-raw://b71e50c226e2aaed7f6c51d48c66ec1789f2bcb5a448bd2178698d2689ac1975",
+				"dweb:/ipfs/QmYpW5xb83Q8phv8VUFcgUmmxsmjqcCVHKeHnpv3KJBs2Y"
 			]
 		}
 	},

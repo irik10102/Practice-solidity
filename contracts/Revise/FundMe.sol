@@ -26,10 +26,10 @@ contract FundMe{
     }
 
     function withdraw(uint256 withdAmt)public {
-        uint256 amtFunded = addressToAmountFunded[msg.sender];
+        uint256 amtFunded = addressToAmountFunded[msg.sender];                       //For every other 
         address senderAddress = msg.sender;
 
-        require(amtFunded>=withdAmt, "You do not have enough funds to withdraw");
+        require(amtFunded>=withdAmt, "You have not deposited enough funds to withdraw");
 
         (bool result,) = payable(senderAddress).call{value:withdAmt}('');
         require(result, "Transaction Failure");

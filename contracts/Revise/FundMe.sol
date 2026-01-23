@@ -15,8 +15,8 @@ contract FundMe{
     event WithdrawlSuccess(address from, address to, string successString, uint256 value);
     
 
-   uint256 internal min_usd = 5e18;
-
+   uint256 constant internal min_usd = 5e18;
+   address immutable i_owner = 0xdD870fA1b7C4700F2BD7f44238821C26f7392148;                                      
     function fund() public payable{
        
         require(msg.value.priceConversion() >=min_usd, "Send Atleast $5 worth of ETH");
@@ -25,17 +25,16 @@ contract FundMe{
         
     }
 
-    function withdraw(uint256 withdAmt)public {
-        uint256 amtFunded = addressToAmountFunded[msg.sender];                       //For every other 
-        address senderAddress = msg.sender;
-
-        require(amtFunded>=withdAmt, "You have not deposited enough funds to withdraw");
-
-        (bool result,) = payable(senderAddress).call{value:withdAmt}('');
-        require(result, "Transaction Failure");
-        emit WithdrawlSuccess(address(this), senderAddress, successString, withdAmt);
-        addressToAmountFunded[senderAddress] = 0;
-
+    function withdraw()public onlyOwner{
+       
+        (bool res,)=payable(i_owner).call{value:address(this).balance}("");
+        require(res, "Withdrawl Failed");
+        emit WithdrawlSuccess(msg.sender, i_owner, successString, i_owner.balance);
         
+    }
+
+    modifier onlyOwner(){
+        require(msg.sender == i_owner, "You are not the owner");
+        _;
     }
 }

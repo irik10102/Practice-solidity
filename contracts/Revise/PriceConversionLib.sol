@@ -8,7 +8,7 @@ import {AggregatorV3Interface} from "@chainlink/contracts/src/v0.8/shared/interf
 library PriceConversionLib{
 
     function getPriceFeed()internal view returns(uint256){
-        AggregatorV3Interface pricefeed = AggregatorV3Interface(0x38cB7800C3Fddb8dda074C1c650A155154924C73);
+        AggregatorV3Interface pricefeed = AggregatorV3Interface(0xb27A31f1b0AF2946B7F582768f03239b1eC07c2c);
 
         ( ,int256 price, , ,  ) = pricefeed.latestRoundData();
         return uint256(price*1e10);
